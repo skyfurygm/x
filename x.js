@@ -45,8 +45,4 @@ const h2 = document.querySelector('h2');
   }
 */
 
-const input = document.querySelector('input[value="\\\"<li>"]');
-if (input) {
-  const textNode = document.createTextNode('Zwykły tekst');
-  input.replaceWith(textNode);
-}
+document.querySelectorAll('li input').forEach(input => input.remove());
