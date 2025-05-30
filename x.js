@@ -25,3 +25,20 @@ if (targetImg) {
 const buttons = document.querySelectorAll('span.button_label');
 buttons[0].remove();
 buttons[1].remove();
+
+const h2 = document.querySelector('h2');
+  if (h2) {
+    const div = document.createElement('div');
+    div.id = 'ww_a0114bcaa94c4';
+    div.setAttribute('v', '1.3');
+    div.setAttribute('loc', 'id');
+    div.setAttribute('a', '{"t":"horizontal","lang":"pl","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}');
+    div.innerHTML = `More forecasts: <a href="https://oneweather.org/warsaw/30_days/" id="ww_a0114bcaa94c4_u" target="_blank">Warsaw 30 day forecast</a>`;
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://app3.weatherwidget.org/js/?id=ww_a0114bcaa94c4';
+
+    h2.replaceWith(div);
+    div.after(script);
+  }
