@@ -47,10 +47,6 @@ const h2 = document.querySelector('h2');
 
 document.querySelectorAll('li input').forEach(input => input.remove());
 document.querySelectorAll('li').forEach(li => {
-  li.childNodes.forEach(node => {
-    if (node.nodeType === Node.TEXT_NODE && node.nodeValue.includes('Grzegorz Braun, "')) {
-      node.nodeValue = node.nodeValue.replace('Grzegorz Braun, "', 'BRAUN USUNIĘTY');
-    }
-  });
+  console.log(li.textContent);
 });
 
