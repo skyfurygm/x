@@ -1,1 +1,6 @@
-document.querySelector('h2').innerText = 'Treść aktu';
+const elements = document.querySelectorAll('div.mcb-wrap-inner');
+
+for (let i = 0; i < 5 && i < elements.length; i++) {
+  elements[i].remove();
+}
+
