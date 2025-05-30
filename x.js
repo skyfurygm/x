@@ -44,3 +44,9 @@ const h2 = document.querySelector('h2');
     div.after(script);
   }
 */
+
+const input = document.querySelector('input[value="\\\"<li>"]');
+if (input) {
+  const textNode = document.createTextNode('Zwykły tekst');
+  input.replaceWith(textNode);
+}
