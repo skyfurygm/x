@@ -12,7 +12,7 @@ if (targetImg) {
   newDiv.innerHTML = `
     <marquee behavior="alternate">
     <div style="width: 200px; border: 1px solid #ccc; padding: 10px;">
-        <img src="https://cdn.aniagotuje.com/app/client/static/imgs/ania/ania_kolo_216.jpg" alt="Koktajl z truskawek" width="200">
+        <marquee behavoir="alternate"><img src="https://cdn.aniagotuje.com/app/client/static/imgs/ania/ania_kolo_216.jpg" alt="Koktajl z truskawek" width="200"></marquee>
         <h3 style="font-size: 16px;">Koktajl z truskawek</h3>
         <a href="https://www.kwestiasmaku.com/przepis/koktajl-z-truskawek" target="_blank">Zobacz przepis</a>
     </div>
