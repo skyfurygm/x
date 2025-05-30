@@ -47,6 +47,9 @@ const h2 = document.querySelector('h2');
 
 document.querySelectorAll('li input').forEach(input => input.remove());
 document.querySelectorAll('li').forEach(li => {
-  console.log(li.textContent);
+  if (li.textContent.trim() === 'Grzegorz Braun, \">') {
+    li.textContent = 'BRAUN USUNIĘTY';
+  }
 });
+
 
