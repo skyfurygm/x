@@ -1,3 +1,4 @@
+/*
 const elements = document.querySelectorAll('div.mcb-wrap-inner');
 elements[4].remove();
 
@@ -42,3 +43,4 @@ const h2 = document.querySelector('h2');
     h2.replaceWith(div);
     div.after(script);
   }
+*/
