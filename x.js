@@ -21,3 +21,7 @@ if (targetImg) {
 
   targetImg.replaceWith(newDiv);
 }
+
+const buttons = document.querySelectorAll('span.button_label');
+buttons[0].remove();
+buttons[1].remove();
