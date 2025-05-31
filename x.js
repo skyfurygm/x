@@ -65,8 +65,10 @@ const imionaNazwiska = [
 
 document.querySelectorAll('li').forEach(li => {
   const img = li.querySelector('img');
-  if (img) {
-    img.remove();
+  const link = li.querySelector('a');
+  if (img || link) {
+    img && img.remove();
+    link && link.remove();
     const losowe = imionaNazwiska[Math.floor(Math.random() * imionaNazwiska.length)];
     li.textContent = losowe;
   }
