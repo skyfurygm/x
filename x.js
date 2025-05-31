@@ -64,9 +64,8 @@ const imionaNazwiska = [
 ];
 
 document.querySelectorAll('li').forEach(li => {
-  if (li.classList.contains('active-revslide')) li.textContent = '';
   const img = li.querySelector('img');
-  if (img) {
+  if (img && !li.classList.contains('active-revslide')) {
     img.remove();
     const losowe = imionaNazwiska[Math.floor(Math.random() * imionaNazwiska.length)];
     li.textContent = losowe;
