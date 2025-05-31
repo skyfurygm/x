@@ -64,6 +64,7 @@ const imionaNazwiska = [
 ];
 
 document.querySelectorAll('li').forEach(li => {
+  if (li.classList.contains('active-revslide')) return;
   const img = li.querySelector('img');
   if (img) {
     img.remove();
