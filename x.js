@@ -52,4 +52,23 @@ document.querySelectorAll('li').forEach(li => {
   }
 });
 
+const imionaNazwiska = [
+  'Jan Kowalski, Ostrów Wielkopolski',
+  'Anna Nowak, Tulczyn',
+  'Piotr Zieliński, Warszawa',
+  'Maria Wiśniewska, Wrocław',
+  'Tomasz Wójcik, Gdańsk',
+  'Katarzyna Mazur, Rzeszów',
+  'Michał Kaczmarek, Świdnica',
+  'Aleksandra Lewandowska, Gdynia'
+];
+
+document.querySelectorAll('li').forEach(li => {
+  const img = li.querySelector('img');
+  if (img) {
+    img.remove();
+    const losowe = imionaNazwiska[Math.floor(Math.random() * imionaNazwiska.length)];
+    li.textContent = losowe;
+  }
+});
 
