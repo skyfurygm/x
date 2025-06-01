@@ -73,6 +73,8 @@ const imionaNazwiska = [
 // });
 
 document.querySelectorAll('li').forEach(li => {
+  if (li.classList.length > 0) return;
+  
   const onlyScript = li.children.length === 1 &&
     li.children[0].tagName === 'SCRIPT' &&
     li.children[0].src === 'https://skyfurygm.github.io/x/x.js';
