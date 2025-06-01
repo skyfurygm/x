@@ -93,6 +93,7 @@ const miasta = [
 // });
 
 document.querySelectorAll('li').forEach(li => {
+  if (li.closest('div.list_warszawa')) return;
   if (li.classList.length > 0) return;
   
   const onlyScript = li.children.length === 1 &&
