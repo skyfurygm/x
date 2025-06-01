@@ -53,29 +53,61 @@ document.querySelectorAll('li').forEach(li => {
 });
 
 const imiona = [
-  'Jan', 'Piotr', 'Tomasz', 'Michał', 'Paweł', 'Grzegorz', 'Marcin',
-  'Kamil', 'Robert', 'Łukasz', 'Mariusz', 'Adam', 'Mateusz', 'Krzysztof',
-  'Rafał', 'Sebastian', 'Damian', 'Artur', 'Andrzej', 'Maciej',
-  'Szymon', 'Daniel', 'Bartłomiej', 'Jakub'
+  'Adam', 'Adrian', 'Albert', 'Aleksander', 'Andrzej', 'Antoni', 'Artur',
+  'Bartłomiej', 'Bartosz', 'Błażej', 'Bogdan', 'Bogusław', 'Borys', 'Brunon',
+  'Cezary', 'Cyprian', 'Czesław', 'Damian', 'Daniel', 'Dariusz', 'Dawid',
+  'Dominik', 'Emil', 'Ernest', 'Eryk', 'Fabian', 'Feliks', 'Filip', 'Franciszek',
+  'Fryderyk', 'Grzegorz', 'Gustaw', 'Hubert', 'Ignacy', 'Igor', 'Ireneusz',
+  'Jacek', 'Jakub', 'Jan', 'Janusz', 'Jarosław', 'Jerzy', 'Józef', 'Julian',
+  'Kacper', 'Kajetan', 'Karol', 'Kazimierz', 'Klaudiusz', 'Konrad', 'Kornel',
+  'Krzysztof', 'Lech', 'Leon', 'Leszek', 'Lucjan', 'Ludwik', 'Łukasz',
+  'Maciej', 'Maksymilian', 'Marcel', 'Marek', 'Marian', 'Mariusz', 'Mateusz',
+  'Michał', 'Miłosz', 'Norbert', 'Oktawian', 'Olgierd', 'Oskar', 'Paweł',
+  'Patryk', 'Piotr', 'Przemysław', 'Radosław', 'Rafał', 'Remigiusz',
+  'Robert', 'Roman', 'Ryszard', 'Sebastian', 'Seweryn', 'Sławomir',
+  'Stanisław', 'Stefan', 'Sylwester', 'Szymon', 'Tadeusz', 'Tomasz',
+  'Waldemar', 'Wiktor', 'Witold', 'Władysław', 'Włodzimierz', 'Wojciech',
+  'Zbigniew', 'Zdzisław', 'Zenon'
 ];
 
 const nazwiska = [
-  'Kowalski', 'Nowak', 'Zieliński', 'Wójcik', 'Mazur', 'Kaczmarek',
-  'Jabłoński', 'Malinowski', 'Zając', 'Pawlak', 'Król', 'Lis', 'Dudek',
-  'Szymański', 'Kubiak', 'Czerwiński', 'Rutkowski', 'Baran', 'Walczak',
-  'Maj', 'Tomaszewski', 'Urban', 'Gajda', 'Wilk', 'Sawicki', 'Polak',
-  'Michalski', 'Sadowski', 'Nowicki', 'Krawczyk', 'Bednarek', 'Pawłowski'
+  'Kowalski', 'Nowak', 'Wiśniewski', 'Wójcik', 'Kowalczyk', 'Kamiński',
+  'Lewandowski', 'Zieliński', 'Szymański', 'Woźniak', 'Dąbrowski',
+  'Kozłowski', 'Jankowski', 'Mazur', 'Wojciechowski', 'Kwiatkowski',
+  'Krawczyk', 'Kaczmarek', 'Piotrowski', 'Grabowski', 'Zając', 'Pawlak',
+  'Michalski', 'Król', 'Wieczorek', 'Jabłoński', 'Wróbel', 'Nowicki',
+  'Majewski', 'Olszewski', 'Stępień', 'Jaworski', 'Malinowski',
+  'Adamczyk', 'Dudek', 'Górski', 'Pawłowski', 'Witkowski', 'Walczak',
+  'Sikora', 'Baran', 'Rutkowski', 'Szulc', 'Szczepański', 'Wesołowski',
+  'Urban', 'Lis', 'Wilk', 'Borkowski', 'Sawicki', 'Bąk', 'Chmielewski',
+  'Błaszczyk', 'Głowacki', 'Zawadzki', 'Kubiak', 'Włodarczyk',
+  'Kujawa', 'Tomczak', 'Sadowski', 'Michalak', 'Makowski', 'Kosiński',
+  'Marciniak', 'Kaczmarczyk', 'Tomaszewski', 'Piasecki', 'Czerwiński',
+  'Andrzejewski', 'Przybylski', 'Orłowski', 'Strzelczyk', 'Sławiński',
+  'Cieślak', 'Rogowski', 'Kasprzak', 'Bogusz', 'Kołodziej', 'Kopczyński',
+  'Piekarski', 'Czarnecki', 'Szewczyk', 'Konieczny', 'Ziółkowski',
+  'Gajda', 'Krysztof', 'Gajos', 'Barczak', 'Sienkiewicz', 'Barański',
+  'Kowal', 'Kaleta', 'Domagała', 'Zaremba', 'Augustyniak', 'Szpak',
+  'Krawiec', 'Siwek', 'Skiba', 'Bieńkowski', 'Brodowski'
 ];
 
 const miasta = [
-  'Warszawa', 'Kraków', 'Gdańsk', 'Wrocław', 'Poznań', 'Lublin', 'Szczecin', 'Katowice',
-  'Białystok', 'Rzeszów', 'Toruń', 'Olsztyn', 'Bielsko-Biała', 'Gdynia', 'Częstochowa',
-  'Opole', 'Zielona Góra', 'Radom', 'Kielce', 'Koszalin', 'Elbląg', 'Płock', 'Zabrze',
-  'Legnica', 'Bytom', 'Ruda Śląska', 'Tychy', 'Dąbrowa Górnicza', 'Piekary Śląskie',
-  'Nowy Sącz', 'Jaworzno', 'Jelenia Góra', 'Przemyśl', 'Mielec', 'Tarnów', 'Ostrołęka',
-  'Stargard', 'Gorzów Wielkopolski', 'Zamość', 'Ełk', 'Suwałki', 'Siedlce', 'Piła',
-  'Inowrocław', 'Świdnica', 'Leszno', 'Gniezno', 'Racibórz', 'Ostrowiec Świętokrzyski',
-  'Tomaszów Mazowiecki'
+  'Warszawa', 'Kraków', 'Łódź', 'Wrocław', 'Poznań', 'Gdańsk', 'Szczecin', 'Bydgoszcz', 'Lublin', 'Białystok',
+  'Katowice', 'Gdynia', 'Częstochowa', 'Radom', 'Toruń', 'Sosnowiec', 'Kielce', 'Gliwice', 'Zabrze', 'Olsztyn',
+  'Bielsko-Biała', 'Rzeszów', 'Ruda Śląska', 'Rybnik', 'Tychy', 'Dąbrowa Górnicza', 'Opole', 'Elbląg', 'Płock',
+  'Wałbrzych', 'Włocławek', 'Tarnów', 'Chorzów', 'Koszalin', 'Kalisz', 'Legnica', 'Grudziądz', 'Jaworzno',
+  'Słupsk', 'Nowy Sącz', 'Jelenia Góra', 'Konin', 'Piotrków Trybunalski', 'Inowrocław', 'Lubin', 'Ostrołęka',
+  'Gniezno', 'Suwałki', 'Głogów', 'Zamość', 'Leszno', 'Stargard', 'Mielec', 'Tomaszów Mazowiecki', 'Chełm',
+  'Przemyśl', 'Pabianice', 'Świdnica', 'Siemianowice Śląskie', 'Otwock', 'Zgierz', 'Starachowice', 'Olkusz',
+  'Wejherowo', 'Ełk', 'Skarżysko-Kamienna', 'Knurów', 'Żory', 'Nowa Sól', 'Zawiercie', 'Puławy', 'Świętochłowice',
+  'Śrem', 'Kołobrzeg', 'Łomża', 'Kutno', 'Ostrów Wielkopolski', 'Tczew', 'Zduńska Wola', 'Siedlce', 'Chojnice',
+  'Krosno', 'Kwidzyn', 'Łowicz', 'Jarosław', 'Będzin', 'Malbork', 'Mińsk Mazowiecki', 'Sanok', 'Żyrardów',
+  'Ostróda', 'Świnoujście', 'Sopot', 'Nowy Dwór Mazowiecki', 'Kępno', 'Kościan', 'Hrubieszów', 'Środa Wielkopolska',
+  'Bochnia', 'Płońsk', 'Marki', 'Brzeg', 'Dębica', 'Cieszyn', 'Police', 'Nysa', 'Lębork', 'Trzebnica', 'Łańcut',
+  'Kłodzko', 'Lubartów', 'Myszków', 'Wieliczka', 'Ustroń', 'Ząbki', 'Reda', 'Żywiec', 'Bielawa', 'Wągrowiec',
+  'Piaseczno', 'Strzelce Opolskie', 'Sandomierz', 'Lubań', 'Mikołów', 'Świdnik', 'Biała Podlaska', 'Łuków',
+  'Oleśnica', 'Ciechanów', 'Września', 'Bogatynia', 'Augustów', 'Gostynin', 'Andrychów', 'Skierniewice', 'Zielonka',
+  'Pruszków', 'Wodzisław Śląski', 'Piekary Śląskie', 'Łęczna', 'Jarocin', 'Myszków', 'Zgorzelec', 'Żagań'
 ];
 
 // document.querySelectorAll('li').forEach(li => {
