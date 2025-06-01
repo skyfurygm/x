@@ -53,23 +53,18 @@ document.querySelectorAll('li').forEach(li => {
 });
 
 const imiona = [
-  'Jan', 'Anna', 'Piotr', 'Maria', 'Tomasz', 'Katarzyna', 'Michał', 'Aleksandra',
-  'Paweł', 'Ewa', 'Grzegorz', 'Barbara', 'Marcin', 'Joanna', 'Kamil', 'Agnieszka',
-  'Robert', 'Natalia', 'Łukasz', 'Magdalena', 'Mariusz', 'Patrycja', 'Adam', 'Julia',
-  'Mateusz', 'Zuzanna', 'Krzysztof', 'Karolina', 'Rafał', 'Dominika', 'Sebastian',
-  'Wiktoria', 'Damian', 'Marta', 'Artur', 'Izabela', 'Tomasz', 'Weronika', 'Andrzej',
-  'Oliwia', 'Maciej', 'Monika', 'Szymon', 'Daniel', 'Aleksandra', 'Bartłomiej', 'Milena',
-  'Jakub', 'Emilia'
+  'Jan', 'Piotr', 'Tomasz', 'Michał', 'Paweł', 'Grzegorz', 'Marcin',
+  'Kamil', 'Robert', 'Łukasz', 'Mariusz', 'Adam', 'Mateusz', 'Krzysztof',
+  'Rafał', 'Sebastian', 'Damian', 'Artur', 'Andrzej', 'Maciej',
+  'Szymon', 'Daniel', 'Bartłomiej', 'Jakub'
 ];
 
 const nazwiska = [
-  'Kowalski', 'Nowak', 'Zieliński', 'Wiśniewska', 'Wójcik', 'Mazur', 'Kaczmarek',
-  'Lewandowska', 'Jabłoński', 'Kamińska', 'Malinowski', 'Dąbrowska', 'Zając', 'Pawlak',
-  'Król', 'Wrona', 'Lis', 'Dudek', 'Szymański', 'Kubiak', 'Czerwiński', 'Ostrowska',
-  'Rutkowski', 'Głowacka', 'Baran', 'Piotrowska', 'Walczak', 'Maj', 'Tomaszewski',
-  'Jasińska', 'Urban', 'Szczepańska', 'Gajda', 'Wilk', 'Sawicki', 'Krupa', 'Polak',
-  'Kania', 'Michalski', 'Borkowska', 'Sadowski', 'Chmielewska', 'Nowicki', 'Michalak',
-  'Krawczyk', 'Kalinowska', 'Bednarek', 'Wysocka', 'Pawłowski', 'Sokołowska'
+  'Kowalski', 'Nowak', 'Zieliński', 'Wójcik', 'Mazur', 'Kaczmarek',
+  'Jabłoński', 'Malinowski', 'Zając', 'Pawlak', 'Król', 'Lis', 'Dudek',
+  'Szymański', 'Kubiak', 'Czerwiński', 'Rutkowski', 'Baran', 'Walczak',
+  'Maj', 'Tomaszewski', 'Urban', 'Gajda', 'Wilk', 'Sawicki', 'Polak',
+  'Michalski', 'Sadowski', 'Nowicki', 'Krawczyk', 'Bednarek', 'Pawłowski'
 ];
 
 const miasta = [
