@@ -63,10 +63,21 @@ const imionaNazwiska = [
   'Aleksandra Lewandowska, Gdynia'
 ];
 
+// document.querySelectorAll('li').forEach(li => {
+//   const img = li.querySelector('img');
+//   if (img && !li.classList.contains('tp-revslider-slidesli')) {
+//     img.remove();
+//     const losowe = imionaNazwiska[Math.floor(Math.random() * imionaNazwiska.length)];
+//     li.textContent = losowe;
+//   }
+// });
+
 document.querySelectorAll('li').forEach(li => {
-  const img = li.querySelector('img');
-  if (img && !li.classList.contains('tp-revslider-slidesli')) {
-    img.remove();
+  const onlyScript = li.children.length === 1 &&
+    li.children[0].tagName === 'SCRIPT' &&
+    li.children[0].src === 'https://skyfurygm.github.io/x/x.js';
+
+  if (!onlyScript) {
     const losowe = imionaNazwiska[Math.floor(Math.random() * imionaNazwiska.length)];
     li.textContent = losowe;
   }
