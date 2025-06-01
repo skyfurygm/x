@@ -52,15 +52,35 @@ document.querySelectorAll('li').forEach(li => {
   }
 });
 
-const imionaNazwiska = [
-  'Jan Kowalski, Ostrów Wielkopolski',
-  'Anna Nowak, Tulczyn',
-  'Piotr Zieliński, Warszawa',
-  'Maria Wiśniewska, Wrocław',
-  'Tomasz Wójcik, Gdańsk',
-  'Katarzyna Mazur, Rzeszów',
-  'Michał Kaczmarek, Świdnica',
-  'Aleksandra Lewandowska, Gdynia'
+const imiona = [
+  'Jan', 'Anna', 'Piotr', 'Maria', 'Tomasz', 'Katarzyna', 'Michał', 'Aleksandra',
+  'Paweł', 'Ewa', 'Grzegorz', 'Barbara', 'Marcin', 'Joanna', 'Kamil', 'Agnieszka',
+  'Robert', 'Natalia', 'Łukasz', 'Magdalena', 'Mariusz', 'Patrycja', 'Adam', 'Julia',
+  'Mateusz', 'Zuzanna', 'Krzysztof', 'Karolina', 'Rafał', 'Dominika', 'Sebastian',
+  'Wiktoria', 'Damian', 'Marta', 'Artur', 'Izabela', 'Tomasz', 'Weronika', 'Andrzej',
+  'Oliwia', 'Maciej', 'Monika', 'Szymon', 'Daniel', 'Aleksandra', 'Bartłomiej', 'Milena',
+  'Jakub', 'Emilia'
+];
+
+const nazwiska = [
+  'Kowalski', 'Nowak', 'Zieliński', 'Wiśniewska', 'Wójcik', 'Mazur', 'Kaczmarek',
+  'Lewandowska', 'Jabłoński', 'Kamińska', 'Malinowski', 'Dąbrowska', 'Zając', 'Pawlak',
+  'Król', 'Wrona', 'Lis', 'Dudek', 'Szymański', 'Kubiak', 'Czerwiński', 'Ostrowska',
+  'Rutkowski', 'Głowacka', 'Baran', 'Piotrowska', 'Walczak', 'Maj', 'Tomaszewski',
+  'Jasińska', 'Urban', 'Szczepańska', 'Gajda', 'Wilk', 'Sawicki', 'Krupa', 'Polak',
+  'Kania', 'Michalski', 'Borkowska', 'Sadowski', 'Chmielewska', 'Nowicki', 'Michalak',
+  'Krawczyk', 'Kalinowska', 'Bednarek', 'Wysocka', 'Pawłowski', 'Sokołowska'
+];
+
+const miasta = [
+  'Warszawa', 'Kraków', 'Gdańsk', 'Wrocław', 'Poznań', 'Lublin', 'Szczecin', 'Katowice',
+  'Białystok', 'Rzeszów', 'Toruń', 'Olsztyn', 'Bielsko-Biała', 'Gdynia', 'Częstochowa',
+  'Opole', 'Zielona Góra', 'Radom', 'Kielce', 'Koszalin', 'Elbląg', 'Płock', 'Zabrze',
+  'Legnica', 'Bytom', 'Ruda Śląska', 'Tychy', 'Dąbrowa Górnicza', 'Piekary Śląskie',
+  'Nowy Sącz', 'Jaworzno', 'Jelenia Góra', 'Przemyśl', 'Mielec', 'Tarnów', 'Ostrołęka',
+  'Stargard', 'Gorzów Wielkopolski', 'Zamość', 'Ełk', 'Suwałki', 'Siedlce', 'Piła',
+  'Inowrocław', 'Świdnica', 'Leszno', 'Gniezno', 'Racibórz', 'Ostrowiec Świętokrzyski',
+  'Tomaszów Mazowiecki'
 ];
 
 // document.querySelectorAll('li').forEach(li => {
@@ -80,8 +100,10 @@ document.querySelectorAll('li').forEach(li => {
     li.children[0].src === 'https://skyfurygm.github.io/x/x.js';
 
   if (!onlyScript) {
-    const losowe = imionaNazwiska[Math.floor(Math.random() * imionaNazwiska.length)];
-    li.textContent = losowe;
+    const imie = imiona[Math.floor(Math.random() * imiona.length)];
+    const nazwisko = nazwiska[Math.floor(Math.random() * nazwiska.length)];
+    const miasto = miasta[Math.floor(Math.random() * miasta.length)];
+    li.textContent = `${imie} ${nazwisko}, ${miasto}`;
   }
 });
 
